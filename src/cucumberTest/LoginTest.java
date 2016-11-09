@@ -7,8 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/feature/login.feature"},
-        tags = {"@login_flow"}
+        features = {"src/features/login.feature"},
+        tags = {"@login_flow"},
+        glue = {"stepDefinitions"}
 )
 public class LoginTest {
 }
